@@ -107,6 +107,7 @@
                   <directory>${project.basedir}</directory>
                   <includes>
                     <include>TestPdf.pdf</include>
+                    <include>META-INF/</include>
                   </includes>
                 </resource>
               </resources>
@@ -140,9 +141,12 @@
               <fallback>false</fallback>
               <buildArgs>
                 <arg>--enable-monitoring=heapdump</arg>
+                <arg>--verbose</arg>
 <!--                <arg>&#45;&#45;enable-monitoring=jfr</arg>-->
-                <arg>-J-XX:+HeapDumpOnOutOfMemoryError</arg>
               </buildArgs>
+              <metadataRepository>
+                <enabled>true</enabled>
+              </metadataRepository>
             </configuration>
           </plugin>
         </plugins>
