@@ -1,8 +1,15 @@
 {
-  "resources":{
-  "includes":[]},
-  "bundles":[{
-    "name":"sun.awt.resources.awt",
-    "classNames":["sun.awt.resources.awt"]
-  }]
+  "resources": {
+    "includes": [{
+      "pattern": "TestPdf.pdf$"
+    }]
+  },
+  "bundles": [
+    {
+      "name": "sun.awt.resources.awt",
+      "classNames": [
+        "sun.awt.resources.awt"
+      ]
+    }
+  ]
 }
